@@ -51,7 +51,8 @@ export function cloneLayoutItem(layoutItem: LayoutItem): LayoutItem {
     // These can be null
     isDraggable: layoutItem.isDraggable, isResizable: layoutItem.isResizable
   };*/
-    return JSON.parse(JSON.stringify(layoutItem));
+    //return JSON.parse(JSON.stringify(layoutItem));
+    return Object.assign({}, layoutItem);
 }
 
 /**
